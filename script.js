@@ -21,7 +21,7 @@ function validateForm(){
 //validates that there field is not blank or has a 0
     principle = document.getElementById("principal").value;
 
-    if (principle == "" || principle == "0") {
+    if (principle == "" || principle <= "0") {
         alert("Enter numnber greater than 0");
         return false;
         }
